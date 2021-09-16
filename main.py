@@ -11,7 +11,8 @@ def voice_recorder():
     with sr.Microphone() as source:
         recorder.adjust_for_ambient_noise(source)
         audio = recorder.listen(source)
-        
+       
+#doing some tests, to open programs just by speaking
     try:
         speech = recorder.recognize_google(audio, language='pt-BR')
 
